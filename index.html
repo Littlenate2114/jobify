@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="hero">
+     <div class="nav">
+  <img class="boxism" src="https://rawgit.com/Littlenate2114/school/master/whiteicon.png" alt="">
+  <h1>Jobify</h1>
+    <div class="navcont">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+      <a href="">Social</a>
+      <a href="" class="active">Login</a>
+    </div>
+  </div>
+    <div class="container">
+      <h1>Supporting Equal Salaries</h1>
+      <p>Get Paid Equally, In a Equality Supporting Job</p>
+      <div class="search">
+      <ion-icon id="search" name="search"></ion-icon>
+          <input type="text" id="searchy" placeholder="Search For a Business : ">
+          <a href="">Continue<ion-icon id="arr" name="arrow-round-forward"></ion-icon></a>
+      </div>
+    </div>        
+    </div>
+    <div class="gcontainer">
+    	<div class="grid">
+    		<div class="item">
+			<img src="wallet.png" alt=""/>
+    			<h1>Equality</h1>	
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+			<a href="#">Learn More<ion-icon id="fac" name="arrow-round-forward"></ion-icon></a>
+    		</div>	
+    		<div class="item">
+			<img src="teamwork.png" alt=""/>
+    			<h1>Community</h1>	
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+			<a href="#">Learn More<ion-icon id="fac" name="arrow-round-forward"></ion-icon></a>
+    		</div>	
+    		<div class="item">
+			<img src="place.png" alt=""/>
+    			<h1>Local Support</h1>	
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+			<a href="#">Learn More<ion-icon id="fac" name="arrow-round-forward"></ion-icon></a>
+    		</div>	
+    	</div>	
+    </div>
+    <div class="companies">
+	    <img width="65px" src="https://rawgit.com/Littlenate2114/school/master/boxes.png" alt=""/>
+	    <h1>Filtering Over 220,043 Local Business and Companies</h1>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          <a href="">Search For a Business<ion-icon id="arr1" name="arrow-round-forward"></ion-icon></a>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+$('#searchy').keypress(function (e) {
+  if (e.which == 13) {
+	  var search = $("#searchy").val();
+	  document.location.href = search+".html" 
+  }
+});
+$(window).scroll(function(){
+if($(window).scrollTop() >= 100){
+$('.nav').css('background-color', 'white');
+$('.nav').css('box-shadow', '0px 0px 25px rgba(0,0,0,0.4)');
+$('.nav a').css('color', '#2b2b2b');
+$('.nav h1').css('color', '#2b2b2b');
+	$('.active').css({'color': '#59b359d9', 'text-decoration': 'underline'});
+$('.boxism').attr('src', 'https://rawgit.com/Littlenate2114/school/master/boxes.png');
+}else{
+$('.nav').css('background-color', 'transparent');
+$('.nav').css('box-shadow', 'none');
+$('.nav a').css('color', 'white');
+$('.nav h1').css('color', 'white');
+$('.boxism').attr('src', 'https://rawgit.com/Littlenate2114/school/master/whiteicon.png');
+$('.active').css({'color': 'white', 'text-decoration': 'none'});
+}
+});
+});
+  </script>
+  <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+</html>
